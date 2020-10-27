@@ -7,7 +7,7 @@ Being in tech can be a grueling experience where individuals can learn many diff
 
 Mood Booster is our answer to helping you get a boost in the face stress, lack of motivation, imposter syndrome, and other unsettling moods that can hinder performance.
 
-Check it out [here!](https://moodbooster.herokuapp.com/)
+Check it out [here!](https://moodboosterj.herokuapp.com/#/)
 
 ---
 
