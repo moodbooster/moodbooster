@@ -1,0 +1,111 @@
+.mainpage-container {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  background-image: url("./assets/yuriy-kovalev-nN1HSDtKdlw-unsplash.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+.splash-window {
+  max-height: 700px;
+  height: 600px;
+  width: 500px;
+  min-width: 500px;
+  background-color: whitesmoke;
+  /* background-color: rgba(255, 255, 255, 0.7); */
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+  .splash-window {
+    margin-top: 20%;
+  }
+}
+
+.mainpage-container .main_button {
+  z-index: 2;
+  background-color: rgb(2, 167, 223);
+  box-shadow: 0px 5px 10px rgba(darken(rgb(5, 95, 185), 40%));
+  border-radius: 10px;
+  color: white;
+  padding: 2%;
+  text-align: center;
+  margin: 10%;
+  font-weight: 600;
+  font-size: 23px;
+  width: 50%;
+  cursor: pointer;
+}
+
+.main_button:hover {
+  background-color: #ef6730;
+}
+
+.mainpage-container h2 {
+  margin-top: 5%;
+  font-size: x-large;
+  font-weight: 700;
+}
+
+.logo-main {
+  background-image: url(logo-no-back.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 100px;
+  width: 350px;
+}
+
+.logo-main p {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* min-height: 35%; */
+  text-align: center;
+  margin: 3% 0 5%;
+}
+
+.main-quote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* width: 75%; */
+  /* max-height: 100px; */
+}
+
+.main-photo {
+  overflow: hidden;
+  max-width: 400px;
+  max-height: 430px;
+}
+
+.vid_title {
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #ef6730;
+}
+
+.random_content {
+  color: rgb(2, 167, 223);
+  margin-bottom: 15px;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.splash-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: 100%;
+}

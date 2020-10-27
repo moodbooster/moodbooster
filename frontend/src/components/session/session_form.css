@@ -1,0 +1,95 @@
+.session-background {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  background-image: url("natures.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+.form-container {
+  display: flex;
+  padding: 0 3%;
+  flex-direction: column;
+  align-items: center;
+  max-width: 500px;
+  height: 450px;
+  margin: 0 auto;
+  margin-top: 10%;
+  background-color: #e6eeffe1;
+  border-radius: 50px;
+  /* height: 600px;
+  width: 400px; */
+}
+
+.signup {
+  height: 60%;
+}
+
+.form-container h1 {
+  color: rgb(2, 167, 223);
+  font-weight: 600;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.form-inner {
+  padding: 40px 0 40px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+}
+
+.input-email,
+.input-password,
+.input-handle {
+  padding: 10px;
+  margin-top: 2%;
+  width: 280px;
+  max-height: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.errors-container {
+  content: "";
+  height: 20px;
+  margin: 10px 0px;
+  padding: 0 5px;
+  font-size: 14px;
+}
+
+.submit-btn {
+  /* margin-top: 10%; */
+  margin: 0 auto;
+  background-color: rgb(3, 150, 199);
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.submit-btn:hover {
+  background-color: #ef6730;
+
+  /* background-color: blanchedalmond; */
+}
+
+.demo-btn {
+  margin-top: 10px;
+}
+
+.input-email:focus,
+.input-password:focus,
+.input-handle:focus {
+  border-color: rgba(229, 103, 23, 0.8);
+  box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset,
+    0 0 8px rgba(229, 103, 23, 0.6);
+  outline: 0 none;
+}

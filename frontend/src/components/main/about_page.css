@@ -1,0 +1,131 @@
+.about-container {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  background-image: url("./assets/yuriy-kovalev-nN1HSDtKdlw-unsplash.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  font-weight: 500;
+}
+
+.about-window {
+  max-height: 560px;
+  min-height: 500px;
+  width: 650px;
+  background-color: white;
+  border: 10px solid #e6eeff;
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+  .splash-window {
+    margin-top: 20%;
+  }
+}
+
+.main_button {
+  z-index: 2;
+  background-color: rgb(3, 150, 199);
+  color: white;
+  padding: 2%;
+  text-align: center;
+  margin: 2%;
+  border-radius: 10px;
+  font-size: 20px;
+  width: 30%;
+  cursor: pointer;
+}
+
+.about-container h2 {
+  margin-top: 5%;
+  font-weight: 600;
+  /* font-family: cursive; */
+  font-size: x-large;
+}
+
+.logo-main {
+  background-image: url(logo-no-back.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 108px;
+  width: 350px;
+}
+
+.about-container p {
+  min-width: 80%;
+  max-height: 500px;
+  text-align: center;
+  font-size: 20px;
+  margin: 0 8%;
+}
+
+.creators {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 3%;
+  width: 80%;
+  align-items: center;
+}
+
+.creators > h4 {
+  font-weight: 800;
+}
+
+.dropdown {
+  /* float: left; */
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: rgb(17, 17, 17);
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  min-width: 70px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 104px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav a:hover,
+.dropdown:hover .dropbtn {
+  background-color: #ef6730;
+  /* width: 120px; */
+  border-radius: 3px;
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
