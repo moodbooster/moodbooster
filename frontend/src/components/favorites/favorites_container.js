@@ -7,26 +7,27 @@ import { fetchUser } from "../../actions/user_actions";
 
 const msp = state => {
   let photosArray = [];
-
-  state.session.user.photoSave.forEach(photoId => {
+  
+  let user = Object.keys(state.user).length !== 0 ? state.user : state.session.user
+  user.photoSave.forEach(photoId => {
     photosArray.push(state.content.photos[photoId]);
   });
 
   let quotesArray = [];
-  state.session.user.quoteSave.forEach(quoteId => {
+  user.quoteSave.forEach(quoteId => {
     quotesArray.push(state.content.quotes[quoteId]);
   });
 
   let videosArray = [];
-  state.session.user.videoSave.forEach(videoId => {
+  user.videoSave.forEach(videoId => {
     videosArray.push(state.content.videos[videoId]);
   });
 
   return {
     user: state.session.user,
-    photoSave: state.session.user.photoSave,
-    quoteSave: state.session.user.quoteSave,
-    videoSave: state.session.user.videoSave,
+    photoSave: user.photoSave,
+    quoteSave: user.quoteSave,
+    videoSave: user.videoSave,
     photos: photosArray,
     quotes: quotesArray,
     videos: videosArray

@@ -5,7 +5,7 @@ class Favorites extends React.Component {
 
   componentDidMount() {
     this.props.fetchUser(this.props.user.id);
-    debugger
+   
     this.props.photoSave.forEach(photoId => {
       this.props.fetchPhoto(photoId);
     });
